@@ -8,7 +8,9 @@ public class InHolland {
     public InHolland() {
         // TODO Maak de studenten array, en voeg enkele studenten toe
         studenten = new Student[]{
-                new Student("Halil", "Teker", "Den Haag")
+                new Student("Halil", "Teker", "Den Haag"),
+                new Student("Anoop", "Bhaltair", "Den Haag"),
+                new Student("Anil", "Heard", "Den Haag")
         };
     }
     public Student[] geefStudentenTerug() {

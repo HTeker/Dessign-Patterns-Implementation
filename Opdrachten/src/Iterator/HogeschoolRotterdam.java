@@ -12,6 +12,8 @@ public class HogeschoolRotterdam {
         // TODO Maak de studenten list, en voeg enkele studenten toe
         studenten = new ArrayList<Student>();
         studenten.add(new Student("Jan", "Janssen", "Rotterdam"));
+        studenten.add(new Student("Chukwuemeka", "Aziz", "Rotterdam"));
+        studenten.add(new Student("Ravindra", "Dushyant", "Rotterdam"));
     }
     public List<Student> getStudenten() {
         return this.studenten;
