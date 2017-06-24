@@ -3,7 +3,7 @@ package Iterator;
 /**
  * Created by Halil Teker on 6/24/2017.
  */
-public class NCOI {
+public class NCOI implements Iterable {
     private StudentNode studentNode;
 
     public NCOI() {
@@ -22,5 +22,10 @@ public class NCOI {
 
     public StudentNode studs() {
         return studentNode;
+    }
+
+    @Override
+    public Iterator iterator() {
+        return new NCOIIterator(studentNode);
     }
 }

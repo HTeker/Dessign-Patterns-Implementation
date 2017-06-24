@@ -28,11 +28,10 @@ public class Ministerie {
             System.out.println(student.voornaam);
         }
 
-        AbstractStudentNode ncoiStudentNode = ncoi.studs();
-        while (!ncoiStudentNode.isEmpty) {
-            Student student = ncoiStudentNode.student;
+        Iterator iterator3 = ncoi.iterator();
+        while(iterator3.hasNext()){
+            Student student = iterator3.next();
             System.out.println(student.voornaam);
-            ncoiStudentNode = ncoiStudentNode.tail;
         }
     }
 }
