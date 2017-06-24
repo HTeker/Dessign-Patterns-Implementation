@@ -1,5 +1,6 @@
 package Iterator;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -9,8 +10,10 @@ public class HogeschoolRotterdam {
     private List<Student> studenten;
     public HogeschoolRotterdam() {
         // TODO Maak de studenten list, en voeg enkele studenten toe
+        studenten = new ArrayList<Student>();
+        studenten.add(new Student("Jan", "Janssen", "Rotterdam"));
     }
     public List<Student> getStudenten() {
-        return null;
+        return this.studenten;
     }
 }
