@@ -22,7 +22,7 @@ public class Ministerie {
     }
 
     public void print(Iterable school){
-        Iterator iterator = school.iterator();
+        Iterator<Student> iterator = school.iterator();
         while(iterator.hasNext()){
             Student student = iterator.next();
             System.out.println(student.voornaam);
