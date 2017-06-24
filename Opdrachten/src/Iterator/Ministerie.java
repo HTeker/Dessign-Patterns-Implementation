@@ -16,16 +16,18 @@ public class Ministerie {
         this.ncoi = ncoi;
     }
     public void printStudenten() {
-        Student[] inhollandStudenten = inHolland.geefStudentenTerug();
-        for (int i = 0; i < inhollandStudenten.length; i++) {
-            Student student = inhollandStudenten[i];
+        Iterator iterator = inHolland.iterator();
+        while(iterator.hasNext()){
+            Student student = iterator.next();
             System.out.println(student.voornaam);
         }
-        List<Student> hrStudenten = hr.getStudenten();
-        for (int i = 0; i < hrStudenten.size(); i++) {
-            Student student = hrStudenten.get(i);
+
+        Iterator iterator2 = hr.iterator();
+        while(iterator2.hasNext()){
+            Student student = iterator2.next();
             System.out.println(student.voornaam);
         }
+
         AbstractStudentNode ncoiStudentNode = ncoi.studs();
         while (!ncoiStudentNode.isEmpty) {
             Student student = ncoiStudentNode.student;

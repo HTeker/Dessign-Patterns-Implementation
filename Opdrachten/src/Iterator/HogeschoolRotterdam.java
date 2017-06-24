@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by Halil Teker on 6/24/2017.
  */
-public class HogeschoolRotterdam {
+public class HogeschoolRotterdam implements Iterable {
     private List<Student> studenten;
     public HogeschoolRotterdam() {
         // TODO Maak de studenten list, en voeg enkele studenten toe
@@ -17,5 +17,10 @@ public class HogeschoolRotterdam {
     }
     public List<Student> getStudenten() {
         return this.studenten;
+    }
+
+    @Override
+    public Iterator iterator() {
+        return new HogeschoolRotterdamIterator(studenten);
     }
 }
