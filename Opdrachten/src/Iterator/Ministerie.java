@@ -16,21 +16,15 @@ public class Ministerie {
         this.ncoi = ncoi;
     }
     public void printStudenten() {
-        Iterator iterator = inHolland.iterator();
+        print(inHolland);
+        print(hr);
+        print(ncoi);
+    }
+
+    public void print(Iterable school){
+        Iterator iterator = school.iterator();
         while(iterator.hasNext()){
             Student student = iterator.next();
-            System.out.println(student.voornaam);
-        }
-
-        Iterator iterator2 = hr.iterator();
-        while(iterator2.hasNext()){
-            Student student = iterator2.next();
-            System.out.println(student.voornaam);
-        }
-
-        Iterator iterator3 = ncoi.iterator();
-        while(iterator3.hasNext()){
-            Student student = iterator3.next();
             System.out.println(student.voornaam);
         }
     }
