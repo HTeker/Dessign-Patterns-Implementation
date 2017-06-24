@@ -7,8 +7,11 @@ public class InHolland {
     private Student[] studenten;
     public InHolland() {
         // TODO Maak de studenten array, en voeg enkele studenten toe
+        studenten = new Student[]{
+                new Student("Halil", "Teker", "Den Haag")
+        };
     }
     public Student[] geefStudentenTerug() {
-        return null;
+        return this.studenten;
     }
 }

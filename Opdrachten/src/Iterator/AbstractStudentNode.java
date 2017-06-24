@@ -6,5 +6,6 @@ package Iterator;
 public abstract class AbstractStudentNode {
     public boolean isEmpty;
     public Student student;
+    public AbstractStudentNode tail;
 }
 
