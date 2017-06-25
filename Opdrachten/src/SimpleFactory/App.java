@@ -5,7 +5,7 @@ package SimpleFactory;
  */
 public class App {
     public static void main(String[] args){
-        DHPizzaStore store = new DHPizzaStore();
+        DHPizzaStore store = new DHPizzaStore(new DHPizzaFactory());
 
         Pizza pizza = store.orderPizzaInShop("hawai");
 
