@@ -18,7 +18,6 @@ public class Client {
         GreenScoreVisitor groenscoreVisitor = new GreenScoreVisitor();
 
         for (IVisitable product : winkelmandje) {
-            System.out.println("Testing...");
             product.accept(groenscoreVisitor);
         }
         System.out.println("De totale groenscore van het winkelmandje is: "
