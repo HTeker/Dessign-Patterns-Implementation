@@ -3,5 +3,9 @@ package StaticFactory;
 /**
  * Created by Halil Teker on 6/25/2017.
  */
-class RdamCheesePizza extends Pizza {}
+class RdamCheesePizza extends Pizza {
+    protected RdamCheesePizza(){
+
+    }
+}
 

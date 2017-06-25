@@ -8,5 +8,7 @@ public class App {
         RdamPizzaStore store = new RdamPizzaStore();
 
         Pizza pizza = store.orderPizzaInShop("hawai");
+        Pizza pizza2 = store.orderPizzaInShop("pepperoni");
+        Pizza pizza3 = store.orderPizzaInShop("cheese");
     }
 }
