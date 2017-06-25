@@ -8,5 +8,9 @@ public class App {
         DHPizzaStore store = new DHPizzaStore();
 
         Pizza pizza = store.orderPizzaInShop("hawai");
+
+        RdamPizzaStore store2 = new RdamPizzaStore();
+
+        Pizza pizza2 = store2.orderPizzaInShop("pepperoni");
     }
 }
