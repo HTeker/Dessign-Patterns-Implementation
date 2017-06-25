@@ -8,8 +8,14 @@ public class Vis implements IVisitable {
     int gewicht;
     String land;
 
+    public Vis(int prijs, int gewicht, String land){
+        this.prijs = prijs;
+        this.gewicht = gewicht;
+        this.land = land;
+    }
+
     @Override
     public void accept(IVisitor visitor) {
-        
+        visitor.visit(this);
     }
 }

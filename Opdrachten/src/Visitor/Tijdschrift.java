@@ -7,6 +7,11 @@ public class Tijdschrift implements IVisitable {
     int prijs;
     int aantalBladzijdes;
 
+    public Tijdschrift(int prijs, int aantalBladzijdes){
+        this.prijs = prijs;
+        this.aantalBladzijdes = aantalBladzijdes;
+    }
+
     @Override
     public void accept(IVisitor visitor) {
 

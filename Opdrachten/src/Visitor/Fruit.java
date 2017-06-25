@@ -8,6 +8,12 @@ public class Fruit implements IVisitable {
     int gewicht;
     String soort;
 
+    public Fruit(int prijs, int gewicht, String soort){
+        this.prijs = prijs;
+        this.gewicht = gewicht;
+        this.soort = soort;
+    }
+
     @Override
     public void accept(IVisitor visitor) {
 
