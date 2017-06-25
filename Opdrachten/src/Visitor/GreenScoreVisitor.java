@@ -54,7 +54,7 @@ public class GreenScoreVisitor implements IVisitor {
 
         totaalScore+= score;
 
-        System.out.println("Groenscore van dit product is: " + Integer.toString(score));
+        System.out.println("Groenscore van dit product is: " + score);
     }
 
     public int getTotalGreenscore(){

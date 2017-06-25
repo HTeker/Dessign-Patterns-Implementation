@@ -15,12 +15,19 @@ public class Client {
         winkelmandje.add(new Tijdschrift(4, 60));
         winkelmandje.add(new Frisdrank(100, 12.1));
         winkelmandje.add(new Frisdrank(200, 0));
+
         GreenScoreVisitor groenscoreVisitor = new GreenScoreVisitor();
+        CalorieVisitor calorieVisitor = new CalorieVisitor();
 
         for (IVisitable product : winkelmandje) {
             product.accept(groenscoreVisitor);
+            product.accept(calorieVisitor);
         }
+
         System.out.println("De totale groenscore van het winkelmandje is: "
                 + groenscoreVisitor.getTotalGreenscore());
+
+        System.out.println("De totale calorieën van het winkelmandje is: "
+                + calorieVisitor.getTotalCalorie());
     }
 }
