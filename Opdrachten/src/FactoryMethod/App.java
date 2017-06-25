@@ -9,7 +9,7 @@ public class App {
 
         Pizza pizza = store.orderPizzaInShop("hawai");
 
-        RdamPizzaStore store2 = new RdamPizzaStore(new RdamPizzaFactory());
+        RdamPizzaStore store2 = new RdamPizzaStore();
 
         Pizza pizza2 = store2.orderPizzaInShop("pepperoni");
     }
